@@ -2,6 +2,47 @@ body {
     background-color: beige;
 }
 
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+li {
+    border: solid 1px black;
+    border-collapse: collapse;
+    flex: 1;
+    margin: auto;
+    text-align: center;
+    
+}
+
+li > a, li > a:checked {
+    display: block;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: bisque;
+}
+
+#texto {
+    display: flex;
+}
+
+.texto {
+    flex: 1;
+    border-right: dashed 1px black;
+    margin: 5px;
+}
+
+pre {
+    margin: 0;
+    padding: 0;
+}
+
 div.cores{
     width: 50%;
     margin: 5px auto;

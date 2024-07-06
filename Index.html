@@ -11,30 +11,39 @@
 </head>
 <body>
     <div>
-        <h1>Título principal</h1>
-        <h2>Título Secundário</h2>
-        <h3>Título Terciário</h3>
-        <h4>Título Quaternário</h4>
-        <h5>Título Quinário</h5>
-        <h6>Último Título, Título Senário</h6>
+        <ul>
+                <li><a href="#titulos">Títulos</a></li>
+                <li><a href="#paragrafos">Parágrafos</a></li>
+                <li><a href="#imagens">Imagens</a></li>
+                <li><a href="#cores">Cores</a></li>
+                <li><a href="#tabela">Tabela</a></li>
+        </ul>
     </div>
-
-    <div>
-        <h1 style="color: rgb(173, 77, 44);">Parágrafos</h1>
-        <p >Parágrafo sem formatação</p>
-        <pre>
-            Parágrafo
-            Com
-            Pre
-            Formatação
-        </pre>
-        <p>Parágrafo <br> com quebra linhas </p>
-        <p>
-            Linha Horizontal
-        </p>
-    
-
-        <div>
+    <div id="texto">
+        <div class="texto" id="titulos">
+            <h1>Título principal</h1>
+            <h2>Título Secundário</h2>
+            <h3>Título Terciário</h3>
+            <h4>Título Quaternário</h4>
+            <h5>Título Quinário</h5>
+            <h6>Último Título, Título Senário</h6>
+        </div>
+        <div class="texto" id="paragrafos">
+            <h1 style="color: rgb(173, 77, 44);">Parágrafos</h1>
+            <p >Parágrafo sem formatação</p>
+            <pre>
+                Parágrafo
+                Com
+                Pre
+                Formatação
+            </pre>
+            <p>Parágrafo <br> com quebra linhas </p>
+            <p>
+                Linha Horizontal
+                <hr>   
+            </p>
+        </div>
+        <div class="texto">
             <h2 style="color: rgb(124, 54, 30);">Formatações de parágrafos</h2>
             <p>
                 Texto <b>em Negrito</b> e <strong>Importante</strong><br>
@@ -45,7 +54,7 @@
             </p>
         </div>
 
-        <div>
+        <div class="texto">
             <h2 style="color: rgb(124, 54, 30);">Citações</h2>
             <blockquote cite="https://pt.wikipedia.org/wiki/Organização_Mundial_da_Saúde">
                 <cite>Organização Mundial da Saúde</cite> (em inglês:<abbr title="World Health Organization">WHO</abbr>) é uma agência especializada em saúde, fundada em 7 de abril de 1948 e subordinada à Organização das Nações Unidas. Sua sede é em Genebra, na Suíça. O diretor-geral é, desde julho de 2017, o etíope Tedros Adhanom.[2]
@@ -56,9 +65,8 @@
             </p>
         </div>
     </div>   
-
-    <hr>
-    <div>
+    
+    <div id="imagens">
         <h1 style="color: rgb(173, 77, 44);">Imagens</h1>
         <h2>Foto</h2>
         <img src="https://images.pexels.com/photos/26654753/pexels-photo-26654753/free-photo-of-cidade-meio-urbano-arte-construcao.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="400" height="400">
@@ -67,32 +75,32 @@
         <h2>Foto clicável</h2>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Diag._Linha_6-Laranja_%28FP_CORR.%29.svg/1920px-Diag._Linha_6-Laranja_%28FP_CORR.%29.svg.png" usemap="#metro" alt="Foto da Linha 6 do Metrô de São Paulo">
         <map name="metro" size="1920x603">
-            <area shape="circle" coords="60,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Brasil%C3%A2ndia">
-            <area shape="circle" coords="188,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Maristela" alt="Maristela">
-            <area shape="circle" coords="316,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Itaberaba" alt="Itaberaba">
-            <area shape="circle" coords="444,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Jo%C3%A3o_Paulo_I" alt="João Paulo I">
-            <area shape="circle" coords="572,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Freguesia_do_%C3%93" alt="Freguesia do Ó">
-            <area shape="circle" coords="700,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Santa_Marina" alt="Santa Marina">
-            <area shape="circle" coords="828,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_%C3%81gua_Branca" alt="Água Branca">
-            <area shape="circle" coords="956,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_SESC-Pompeia" alt="SESC-Pompeia">
-            <area shape="circle" coords="1084,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Perdizes" alt="Perdizes">
-            <area shape="circle" coords="1212,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_PUC%E2%80%93Cardoso_de_Almeida" alt="PUC-Cardoso de Almeida">
-            <area shape="circle" coords="1340,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_FAAP%E2%80%93Pacaembu" alt="FAAP-Pacaembu">
-            <area shape="circle" coords="1468,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Higien%C3%B3polis%E2%80%93Mackenzie" alt="Higienópolis-Mackenzie">
-            <area shape="circle" coords="1596,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_14_Bis%E2%80%93Saracura" alt="14 Bis-Saracura">
-            <area shape="circle" coords="1724,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Bela_Vista_(Metr%C3%B4_de_S%C3%A3o_Paulo)" alt="Bela Vista">
-            <area shape="circle" coords="1852,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_S%C3%A3o_Joaquim" alt="São Joaquim">
+            <area shape="circle" target="_blank" coords="60,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Brasil%C3%A2ndia">
+            <area shape="circle" target="_blank" coords="188,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Maristela" alt="Maristela">
+            <area shape="circle" target="_blank" coords="316,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Itaberaba" alt="Itaberaba">
+            <area shape="circle" target="_blank" coords="444,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Jo%C3%A3o_Paulo_I" alt="João Paulo I">
+            <area shape="circle" target="_blank" coords="572,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Freguesia_do_%C3%93" alt="Freguesia do Ó">
+            <area shape="circle" target="_blank" coords="700,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Santa_Marina" alt="Santa Marina">
+            <area shape="circle" target="_blank" coords="828,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_%C3%81gua_Branca" alt="Água Branca">
+            <area shape="circle" target="_blank" coords="956,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_SESC-Pompeia" alt="SESC-Pompeia">
+            <area shape="circle" target="_blank" coords="1084,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Perdizes" alt="Perdizes">
+            <area shape="circle" target="_blank" coords="1212,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_PUC%E2%80%93Cardoso_de_Almeida" alt="PUC-Cardoso de Almeida">
+            <area shape="circle" target="_blank" coords="1340,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_FAAP%E2%80%93Pacaembu" alt="FAAP-Pacaembu">
+            <area shape="circle" target="_blank" coords="1468,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Higien%C3%B3polis%E2%80%93Mackenzie" alt="Higienópolis-Mackenzie">
+            <area shape="circle" target="_blank" coords="1596,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_14_Bis%E2%80%93Saracura" alt="14 Bis-Saracura">
+            <area shape="circle" target="_blank" coords="1724,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Bela_Vista_(Metr%C3%B4_de_S%C3%A3o_Paulo)" alt="Bela Vista">
+            <area shape="circle" target="_blank" coords="1852,301,24" href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_S%C3%A3o_Joaquim" alt="São Joaquim">
         </map>
     </div>
     <hr>
-    <div>
+    <div id="cores">
         <h1>Cores</h1>
         <div class="cores" style="text-align:center; background-color: rgba(60, 179, 113, 0.5);"><p>RGBA(60, 179, 113, 0.5)</p></div>
         <div class="cores" style="text-align:center; background-color: #6a5acd;"><p>HEX(#6a5acd)</p></div>
         <div class="cores" style="text-align:center; background-color: hsl(300, 76%, 72%);"><p>HSL(300, 76%, 72%)</p></div>
     </div>
     <hr>
-    <div>
+    <div id="tabela">
         <h1>Tabela</h1>
         <Table>
             <colgroup>
