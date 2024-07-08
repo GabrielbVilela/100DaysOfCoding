@@ -2,6 +2,13 @@ body {
     background-color: beige;
 }
 
+h1 {
+    color: rgb(173, 77, 44);
+}
+
+h2 {
+    color: rgb(124, 54, 30);"
+}
 ul {
     list-style-type: none;
     display: flex;
@@ -70,4 +77,8 @@ tr:hover{
 
 area:hover{
     background-color:black ;
+}
+
+iframe {
+    margin: 20px auto;
 }
