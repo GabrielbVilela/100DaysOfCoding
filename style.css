@@ -1,5 +1,8 @@
 body {
     background-color: beige;
+    overflow-x: hidden;
+    margin: auto 2vw;
+    font-size: 1vw;
 }
 
 h1 {
@@ -44,10 +47,16 @@ li:hover {
     border-right: dashed 1px black;
     margin: 5px;
 }
+img #foto{
+    max-width: 400px;
+    width: 1svw;
+    height: auto;
+}
 
-pre {
-    margin: 0;
-    padding: 0;
+img .fotoClicavel {
+    width: 1920px;
+    height: auto;
+    height: 100%;
 }
 
 div.cores{
@@ -81,4 +90,17 @@ area:hover{
 
 iframe {
     margin: 20px auto;
+}
+
+@media (max-width: 900px) {
+    ul, li, #texto {
+        flex-direction: column;
+        width: 100%;
+    }
+    .texto {
+        border: none;
+    }
+    #iframe, .fotoClicavel {
+        display:none;
+    }
 }
