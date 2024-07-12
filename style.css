@@ -26,10 +26,6 @@ li {
     text-align: center;   
 }
 
-#charset h1{
-    text-align: center;
-}
-
 li > a, li > a:checked {
     display: block;
     color: black;
@@ -59,7 +55,6 @@ img #foto{
 img .fotoClicavel {
     width: 1920px;
     height: auto;
-    height: 100%;
 }
 
 div.cores{
@@ -96,6 +91,13 @@ iframe {
 }
 
 @media (max-width: 900px) {
+    body {
+        font-size: 4vw;
+    }
+    img {
+        width: 70%;
+        margin: auto;
+    }
     ul, li, #texto {
         flex-direction: column;
         width: 100%;
@@ -122,6 +124,11 @@ fieldset > div {
     margin: 10px 30px;
 }
 
+fieldset > div > div {
+    display: inline-block;
+    margin: 4px;
+}
+
 fieldset {
     display: inline-block;
 }
@@ -129,3 +136,8 @@ fieldset {
 select {
     margin: 20px;
 }
+
+.graficos {
+    float: left;
+}
+
