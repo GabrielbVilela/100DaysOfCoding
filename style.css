@@ -2,7 +2,7 @@ body {
     background-color: beige;
     overflow-x: hidden;
     margin: auto 2vw;
-    font-size: 1vw;
+    font-size: 1.4vw;
 }
 
 h1 {
@@ -23,8 +23,11 @@ li {
     border-collapse: collapse;
     flex: 1;
     margin: auto;
+    text-align: center;   
+}
+
+#charset h1{
     text-align: center;
-    
 }
 
 li > a, li > a:checked {
@@ -103,4 +106,26 @@ iframe {
     #iframe, .fotoClicavel {
         display:none;
     }
+}
+
+form {
+    margin: 20px;
+    
+}
+
+input {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+fieldset > div {
+    margin: 10px 30px;
+}
+
+fieldset {
+    display: inline-block;
+}
+
+select {
+    margin: 20px;
 }

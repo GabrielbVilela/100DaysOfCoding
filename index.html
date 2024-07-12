@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gabriel Vilela"
+    <meta name="author" content="Gabriel Vilela">
     <meta name="keywords" content="Desafio, 100 dias, programação">
     <meta name="description" content="Desafio de programação por 100 dias úteis">
     <title>Desafio 100DaysOfCode</title>
@@ -16,11 +16,11 @@
         <h1>SITE PARA O DESAFIO 100 DIAS DE PROGRAMAÇÃO</h1>
         <nav>
             <ul>
-                    <li><a href="#titulos">Títulos</a></li>
                     <li><a href="#paragrafos">Parágrafos</a></li>
                     <li><a href="#imagens">Imagens</a></li>
                     <li><a href="#cores">Cores</a></li>
                     <li><a href="#tabela">Tabela</a></li>
+                    <li><a href="#form">Formulário</a></li>
             </ul>
         </nav>
     </header>
@@ -86,7 +86,19 @@ if (condições) {
                 <strong>Variáveis de programação ou matemática</strong><br> <var>X</var> = 2<br> <var>Y</var> = 3<br> <var>X</var> + <var>Y</var> = 5
             </p>
         </article>
-    </section>   
+    </section>
+    <article id="charset">
+        <h1>Charset UTF-8</h1>
+        <h2>Entidades</h2>
+        <p>&#60;br&#62;</p>
+        <p>&amp#60;br&amp#60;</p>
+        <h2>Emojis</h2>
+        <p>&#128512; &#128513; &#128514; &#128515; &#128516; &#128517;</p>
+        <p>&amp#128512; &amp#128513; &amp#128514; &amp#128515; &amp#128516; &amp#128517;</p>
+        <h2>Simbolos</h2>
+        <p>&#169; &#174; &#8364;</p>
+        <p>&amp#169; &amp#174; &amp#8364;</p>
+    </article>   
     
     <section id="imagens">
         <h1>Imagens</h1>
@@ -176,6 +188,35 @@ if (condições) {
                 <td></td>
             </tr>
         </Table>
+    </section>
+    <section id="form">
+        <h1>Formulário</h1>
+        <form action="mailto:gabrielbvilelal@gmail.com" method="post">
+            <label for="nome">Nome:</label> <br>
+            <input name="nome" type="text"><br>
+            <fieldset>
+                    <legend>Qual a sua avaliação do site?</legend>
+                <div>
+                    <input value="5star" required name="avaliacao" id="5star"  type="radio">
+                    <label for="5star">5 Estrelas</label>
+                    <input value="4star" name="avaliacao" id="4star" type="radio">
+                    <label for="4star">4 Estrelas</label>
+                    <input value="3star" name="avaliacao" id="3star" type="radio">
+                    <label for="3star">3 Estrelas</label>
+                    <input value="2star" name="3star" id="2star" type="radio">
+                    <label for="2star">2 Estrelas</label>
+                    <input value="1star" name="avaliacao" id="1star" type="radio">
+                    <label for="1star">1 Estrela</label>
+                </div>        
+                <Textarea name="opniao" placeholder="Digite aqui a sua opnião sobre o site" cols="30" rows="10"></Textarea>
+            </fieldset> <br>
+            <label for="frontOuBack">Você prefere Frontend ou backend?</label>
+            <select name="frontOuBack" id="frontOuBack">
+                <option value="front">Frontend</option>
+                <option value="back">BackEnd</option>
+            </select>
+            <input type="submit" value="Enviar Formulário">
+        </form>
     </section>
 </body>
 </html>
